@@ -1,1 +1,38 @@
 /* The main stylesheet */
+
+
+/* Reviews section */
+
+.img-face {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+figure {
+  float:left;
+}
+
+p.name {
+  padding: 10px;
+  margin-left: 50px;
+}
+
+/* Ads section */
+
+section.ads>div.container {
+  text-align: center;
+}
+
+.img-ads {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  margin: 0 50px 0 50px;
+  width: 180px;
+  height: 180px;
+}
+
+.img-ads:hover {
+  -webkit-filter: none;
+  filter: none;
+}
