@@ -1,12 +1,45 @@
 /* The main stylesheet */
 
+
 /* Page header section */
+
+header {
+  width:90%;
+  margin-left:5%;
+  margin-top:5px;
+  display: block;
+}
+
+.nav-main {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.nav-main>a{
+  text-decoration: none;
+  color: #2F506D;
+  padding: 5px;
+}
+
+.nav-main>a:hover{
+  border: 2px solid grey;
+  color: #79231F;
+  border-radius: 50px;
+  text-decoration: none;
+  padding: 3px;
+}
+
 
 /* Main article */
 
 article {
   width:90%;
   margin-left:5%;
+  font-family: 'Open Sans', serif;
+  font-weight: 400;
+  font-size: 11pt;
+
 }
 
 /* Reviews section */
@@ -47,17 +80,46 @@ section.partners>div.container {
 
 /* Page footer section */
 
+footer {
+  font-family: 'Open Sans', serif;
+  font-weight: 300;
+}
+
 footer#footer-page {
   margin-top: 5px;
-  padding-top: 20px;
-  background-color: #767676;
+  padding-top: 2px;
+  background-color: black;
+}
+
+a:hover {
+  color: #79231F;
+  text-decoration: none;
+}
+
+footer#footer-page div.wrapper {
+  background-color: #333;
+  color: #999;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18pt;
+}
+
+.img-social {
+  width: 48px;
+  height: 48px;
+  margin-left: 10px;
+}
+
+.contacts {
+  font-size: 18pt;
 }
 
 section#copyrigth {
   padding-top:10 0 0 0;
   text-align: center;
-}
-
-footer#footer-page div.wrapper {
-  background-color: #eee;
+  font-size: 12pt;
 }

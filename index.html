@@ -4,28 +4,32 @@
     <title>Добро пожаловать на Biketravel.by</title>
     <meta charset="utf-8">
 
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
-      <h1>Welcome to BikeTravel.by</h1>
       <img src="media/logo.jpg">
-      <nav>
+      <nav class="nav-main">
         <a href="contact.html">Путешествие</a>
         <a href="photos.html">Фотоотчеты</a>
         <a href="calendar.html">Календарь мероприятий</a>
         <a href="contact.html">Контакты</a>
         <a href="contact.html">О нас</a>
       </nav>
+      <span class="search-form">
+        <label for="search-form">
+        <input type="text" placeholder="Поиск" id="search-form">
+        <label for="search-button">
+        <input type="submit" id="search-button" value="Искать">
+      </span>
     </header>
 
     <article>
       <section id="upcoming" class="col-md-12">
-        <header>
-          <h1>Ближайшие туры</h1>
-        </header>
 
         <div id="container">
           <div id="upcoming-tour" class="col-md-4">
@@ -157,7 +161,8 @@
     <footer id="footer-page">
       <div class="wrapper">
       <section id="links" class="container">
-        <section class="col-md-4">
+
+        <section class="popular-tours col-md-4">
           <header><h2>Популярные туры</h2></header>
           <nav>
             <ul>
@@ -167,20 +172,27 @@
             </ul>
           </nav>
         </section>
+
         <section class="col-md-4">
           <header><h2>Мы в соцсетях</h2></header>
-          <a href="#">Мы в контакте</a>
-          <a href="#">Мы в фейсбуке</a>
+          <div class="social-wrapper">
+            <a href="https://facebook.com/biketravel.by"><img class="img-social" src="media/facebook-icon.png" title="Facebook"></a>
+            <a href="https://vk.com/biketravel_by"><img class="img-social" src="media/vk-icon.png" title="ВКонтакте"></a>
+          </div>
         </section>
-        <section class="col-md-4">
+
+        <section class="contacts col-md-4">
           <header><h2>Контакты</h2></header>
-          <p>По организационным вопросам +375 29 7770015</p>
+          <p>+375 (29) 777-00-15 Туры</p>
+          <p>+375 (29) 777-00-15 Шоптуры</p>
         </section>
+
       </section>
       <section id="copyrigth">
-        &copy; Biketravel.by 2015
+        &copy; <a href="http://biketravel.by">Biketravel.by</a> 2015
       </section>
     </div>
     </footer>
+
   </body>
 </html>
