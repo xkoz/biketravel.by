@@ -28,11 +28,11 @@ p.name {
 
 /* Ads section */
 
-section.ads>div.container {
+section.partners>div.container {
   text-align: center;
 }
 
-.img-ads {
+.img-partners {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   margin: 0 50px 0 50px;
@@ -40,7 +40,7 @@ section.ads>div.container {
   height: auto;
 }
 
-.img-ads:hover {
+.img-partners:hover {
   -webkit-filter: none;
   filter: none;
 }
