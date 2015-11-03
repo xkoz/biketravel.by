@@ -1,5 +1,13 @@
 /* The main stylesheet */
 
+/* Page header section */
+
+/* Main article */
+
+article {
+  width:90%;
+  margin-left:5%;
+}
 
 /* Reviews section */
 
@@ -28,11 +36,28 @@ section.ads>div.container {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   margin: 0 50px 0 50px;
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: auto;
 }
 
 .img-ads:hover {
   -webkit-filter: none;
   filter: none;
+}
+
+/* Page footer section */
+
+footer#footer-page {
+  margin-top: 5px;
+  padding-top: 20px;
+  background-color: #767676;
+}
+
+section#copyrigth {
+  padding-top:10 0 0 0;
+  text-align: center;
+}
+
+footer#footer-page div.wrapper {
+  background-color: #eee;
 }

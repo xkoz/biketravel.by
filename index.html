@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" manifest="manifest.appcache">
   <head>
     <title>Добро пожаловать на Biketravel.by</title>
+    <meta charset="utf-8">
+
     <link href="css/style.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
   </head>
   <body>
     <header>
@@ -19,7 +22,7 @@
     </header>
 
     <article>
-      <section id="upcoming">
+      <section id="upcoming" class="col-md-12">
         <header>
           <h1>Ближайшие туры</h1>
         </header>
@@ -52,6 +55,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at massa magna. Fusce cursus massa id justo lobortis convallis. <a href="#">Далее</a></p>
           </div>
         </div>
+        <p><a href="#">Все путешествия (11)</a></p>
       </section>
 
       <section id="news">
@@ -67,6 +71,7 @@
         <p>
           <strong>25.03.2015</strong> - Нашим юбилейным 100-м велотуристом стала Дарья Попова из Бреста. На память об этом событии мы подарили ей велошлем. <a href="#">Читать далее</a>
         </p>
+      <p><a href="#">Все новости</a></p>
       </section>
 
       <section id="reviews">
@@ -140,36 +145,42 @@
         <header>
           <h1>Партнеры</h1>
         </header>
-        <section>
-          <a href="#"><img class="img-ads" src="media/ads/brestcity.png" title=""></a>
+        <div class="container">
+          <a href="#"><img class="img-ads" src="media/ads/brestcity.png" title="Брестсити. Новости города Бреста"></a>
           <a href="#"><img class="img-ads" src="media/ads/virtualbrest.png" title=""></a>
-          <a href="#"><img class="img-ads" src="media/ads/velozvezda.png" title=""></a>
+          <a href="#"><img class="img-ads" src="media/ads/velozvezda.png" title="Прокат велосипедов в Бресте"></a>
           <a href="#"><img class="img-ads" src="media/ads/velosklad.png" title=""></a>
-        </section>
+        </div>
       </section>
     </article>
 
-    <footer>
-      <section>
-      <section class="col-md-4">
-        <header><h1>Популярные туры</h1></header>
-        <nav>
-          <a href="#">Беловежская пуща</a>
-          <a href="#">Святая гора Грабарка</a>
-          <a href="#">Долина Западного Буга</a>
-        </nav>
+    <footer id="footer-page">
+      <div class="wrapper">
+      <section id="links" class="container">
+        <section class="col-md-4">
+          <header><h2>Популярные туры</h2></header>
+          <nav>
+            <ul>
+              <li><a href="#">Беловежская пуща</a></li>
+              <li><a href="#">Святая гора Грабарка</a></li>
+              <li><a href="#">Долина Западного Буга</a></li>
+            </ul>
+          </nav>
+        </section>
+        <section class="col-md-4">
+          <header><h2>Мы в соцсетях</h2></header>
+          <a href="#">Мы в контакте</a>
+          <a href="#">Мы в фейсбуке</a>
+        </section>
+        <section class="col-md-4">
+          <header><h2>Контакты</h2></header>
+          <p>По организационным вопросам +375 29 7770015</p>
+        </section>
       </section>
-      <section class="col-md-4">
-        <header><h1>Мы в соцсетях</h1></header>
-        <a href="">Мы в контакте</a>
-        <a href=""></a>
+      <section id="copyrigth">
+        &copy; Biketravel.by 2015
       </section>
-      <section class="col-md-4">
-        <header><h1>Контакты</h1></header>
-        <p>По организационным вопросам +375 29 7770015</p>
-      </section>
-    </section>
-      Copyrigth &copy; 2015
+    </div>
     </footer>
   </body>
 </html>
